@@ -35,3 +35,5 @@ jobs:
           file: ./docker/Dockerfile
           push: true
           tags: ${{ secrets.DOCHUB_USERNAME }}/var_keeper:${{ steps.cut.outputs.sha_short }}
+          platform: linux/arm64
+
